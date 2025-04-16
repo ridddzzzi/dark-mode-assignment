@@ -2,7 +2,12 @@ import React, {useState,useEffect} from 'react'
 import Hero from "./components/Hero.jsx";
 
 const App = () => {
-    const [darkMode,setDarkMode] = useState(false);
+    const [darkMode,setDarkMode] = useState(() => {
+        const savedTheme = localStorage.getItem("theme")
+
+        // return savedTheme === 'dark' ? true : false;
+        return savedTheme ==='dark' //shortcut of writing above line
+    });
 
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
@@ -12,9 +17,11 @@ const App = () => {
         if (darkMode) {
             // setDarkMode(false);
             document.documentElement.classList.add('dark')
+            localStorage.setItem("theme", "dark");
 
         } else {
             document.documentElement.classList.remove('dark')
+            localStorage.setItem("theme", "light");
         }
     },[darkMode])
     return (
