@@ -1,0 +1,9 @@
+Hi! I'm a passionate frontend developer with strong expertise in React.js, Bootstrap, and Tailwind CSS. I specialize in crafting clean, responsive, and user-friendly web interfaces that not only look great but also perform seamlessly across all devices.
+
+I've successfully delivered multiple web projects, ensuring top-quality code, smooth user experience, and timely delivery. Whether you're starting from scratch or need help enhancing an existing site, I'm here to bring your vision to life.
+
+Let's build something amazing together!
+ <div className='absolute -inset-0.5
+                        bg-gradient-to-r from-amber-500 to-indigo-900
+                        rounded-2xl
+                        blur-xl opacity-50 animate-pulse'></div>
